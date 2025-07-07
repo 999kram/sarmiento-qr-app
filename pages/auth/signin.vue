@@ -73,6 +73,7 @@
 <script>
 export default {
   layout: "auth",
+  middleware: 'guest',
   methods: {
     SignInWithGoogle(){
       this.$auth.loginWith('google')
