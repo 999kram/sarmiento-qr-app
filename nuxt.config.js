@@ -20,19 +20,20 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
-  // ✅ Firebase plugin
-  plugins: [],
 
-  // Global CSS
+  plugins: [
+    '~/plugins/html5qrcode.client.js'
+  ],
+  
+
   css: [],
 
-  // Auto import components
+ 
   components: true,
 
-  // Build modules
   buildModules: ['@nuxtjs/vuetify'],
 
-  // Nuxt modules
+
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/auth-next'
@@ -66,7 +67,8 @@ export default {
       },
     },
 
-  // Vuetify config
+
+
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
